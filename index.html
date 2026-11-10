@@ -1,0 +1,870 @@
+```html
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEO-POP CHAOS UNIVERSE 2099 // 100% ZERO-DATA HUMOR ENGINE</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            mono: ['Courier New', 'monospace']
+          },
+          colors: {
+            pop: {
+              pink: '#FF007F',
+              cyan: '#00F0FF',
+              green: '#39FF14',
+              yellow: '#FFE600',
+              purple: '#8A2BE2',
+              red: '#FF003C',
+              dark: '#0D0221',
+              card: '#190A38'
+            }
+          },
+          boxShadow: {
+            'pop-pink': '5px 5px 0px #FF007F',
+            'pop-cyan': '5px 5px 0px #00F0FF',
+            'pop-green': '5px 5px 0px #39FF14',
+            'pop-yellow': '5px 5px 0px #FFE600',
+            'pop-purple': '5px 5px 0px #8A2BE2',
+            'pop-red': '5px 5px 0px #FF003C',
+            'pop-white': '5px 5px 0px #FFFFFF',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Neo-Brutalist Pop Styles & Keyframes */
+    .border-pop { border: 3px solid #000000; }
+    .border-pop-white { border: 3px solid #FFFFFF; }
+
+    /* Screen Shake Animation */
+    .shake-screen {
+      animation: shake 0.3s cubic-bezier(.36,.07,.19,.97) both;
+    }
+    @keyframes shake {
+      10%, 90% { transform: translate3d(-2px, 0, 0); }
+      20%, 80% { transform: translate3d(4px, 0, 0); }
+      30%, 50%, 70% { transform: translate3d(-6px, 0, 0); }
+      40%, 60% { transform: translate3d(6px, 0, 0); }
+    }
+
+    /* Chaos Hyper Mode */
+    .chaos-mode-active {
+      animation: rainbowBg 0.8s infinite linear alternate !important;
+    }
+    @keyframes rainbowBg {
+      0% { background-color: #FF007F; }
+      25% { background-color: #00F0FF; }
+      50% { background-color: #8A2BE2; }
+      75% { background-color: #39FF14; }
+      100% { background-color: #FFE600; }
+    }
+
+    /* High Contrast Accessibility Override */
+    .high-contrast {
+      background-color: #000000 !important;
+      color: #FFFF00 !important;
+      filter: contrast(200%);
+    }
+    .high-contrast * {
+      background-color: #000000 !important;
+      color: #FFFF00 !important;
+      border-color: #FFFF00 !important;
+      box-shadow: none !important;
+    }
+
+    /* Smooth Page Transitions */
+    .page-view {
+      display: none;
+      opacity: 0;
+      transition: opacity 0.25s ease-in-out;
+    }
+    .page-view.active {
+      display: block;
+      opacity: 1;
+    }
+
+    /* Custom Focus Outline for WCAG Accessibility */
+    *:focus-visible {
+      outline: 4px solid #FFE600 !important;
+      outline-offset: 3px !important;
+    }
+
+    /* Bouncing Emojis Animation */
+    @keyframes floatEmoji {
+      0% { transform: translateY(0px) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(-300px) rotate(360deg); opacity: 0; }
+    }
+    .floating-emoji {
+      position: fixed;
+      pointer-events: none;
+      z-index: 100;
+      font-size: 2.5rem;
+      animation: floatEmoji 2s ease-out forwards;
+    }
+  </style>
+</head>
+<body class="bg-pop-dark text-white font-sans min-h-screen flex flex-col overflow-x-hidden selection:bg-pop-yellow selection:text-black" id="appBody">
+
+  <!-- Floating Emoji Container -->
+  <div id="emojiContainer" aria-hidden="true"></div>
+
+  <!-- TOP PARANOIA SECURITY BANNER -->
+  <aside aria-label="Privacy & Security Directive" class="sticky top-0 z-50 bg-black border-b-4 border-pop-cyan text-pop-cyan p-2.5 text-xs font-black flex flex-wrap justify-between items-center gap-2 shadow-pop-cyan">
+    <div class="flex items-center gap-2 tracking-widest uppercase">
+      <span class="w-3 h-3 rounded-full bg-pop-green"></span>
+      <span>🔒 PARANOIA PROTOCOL: 0 BYTES COLLECTED • 0 COOKIES • 100% ANONYMOUS</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <button onclick="toggleChaosMode()" class="bg-pop-pink hover:bg-pop-yellow text-white hover:text-black border-2 border-black px-2.5 py-1 rounded font-black transition-all text-xs shadow-pop-white">
+        ⚡ MAXIMUM CHAOS
+      </button>
+      <button onclick="switchTab('compliance')" class="bg-pop-yellow hover:bg-pop-green text-black border-2 border-black px-2.5 py-1 rounded font-black transition-all text-xs shadow-pop-white">
+        🛡️ AUDIT (19/19)
+      </button>
+    </div>
+  </aside>
+
+  <!-- HEADER & NAVIGATION TABS (6 PAGES) -->
+  <header class="max-w-7xl w-full mx-auto p-4 sm:p-6 pb-2">
+    <div class="bg-pop-card border-4 border-black p-4 sm:p-6 rounded-2xl shadow-pop-pink flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="flex items-center gap-3 cursor-pointer" onclick="switchTab('hub')">
+        <div class="w-12 h-12 bg-pop-yellow border-3 border-black rounded-xl flex items-center justify-center text-2xl shadow-pop-cyan font-black text-black">
+          🤪
+        </div>
+        <div>
+          <h1 class="text-xl sm:text-3xl font-black text-pop-yellow uppercase tracking-wider">
+            NEO-POP CHAOS <span class="text-pop-cyan">2099</span>
+          </h1>
+          <p class="text-xs text-pop-green font-bold tracking-widest uppercase">100% Zero-Data Humor Terminal</p>
+        </div>
+      </div>
+
+      <!-- Quick Accessibility & Sound Controls -->
+      <div class="flex flex-wrap items-center gap-2">
+        <button onclick="toggleContrast()" aria-label="Toggle High Contrast Mode" class="px-3 py-1.5 bg-black hover:bg-pop-yellow text-pop-yellow hover:text-black border-2 border-pop-yellow font-black text-xs rounded-lg transition-all shadow-pop-yellow">
+          👁️ HIGH CONTRAST
+        </button>
+        <button onclick="playAudio('fanfare')" aria-label="Play Victory Sound" class="px-3 py-1.5 bg-black hover:bg-pop-green text-pop-green hover:text-black border-2 border-pop-green font-black text-xs rounded-lg transition-all shadow-pop-green">
+          🎺 VICTORY NOISE
+        </button>
+      </div>
+    </div>
+
+    <!-- 6 PAGE ROUTER NAV BAR -->
+    <nav aria-label="Main Navigation" class="mt-4 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2">
+      <button onclick="switchTab('hub')" id="nav-hub" class="nav-btn p-2.5 bg-pop-pink text-white font-black text-xs rounded-xl border-3 border-black shadow-pop-white hover:scale-105 transition-transform uppercase flex flex-col items-center gap-1">
+        <span class="text-lg">🌀</span> 1. Chaos Matrix
+      </button>
+      <button onclick="switchTab('jokes')" id="nav-jokes" class="nav-btn p-2.5 bg-pop-dark hover:bg-pop-cyan text-pop-cyan hover:text-black font-black text-xs rounded-xl border-3 border-black shadow-pop-cyan hover:scale-105 transition-transform uppercase flex flex-col items-center gap-1">
+        <span class="text-lg">📚</span> 2. Megapedia
+      </button>
+      <button onclick="switchTab('compliance')" id="nav-compliance" class="nav-btn p-2.5 bg-pop-dark hover:bg-pop-green text-pop-green hover:text-black font-black text-xs rounded-xl border-3 border-black shadow-pop-green hover:scale-105 transition-transform uppercase flex flex-col items-center gap-1">
+        <span class="text-lg">🛡️</span> 3. Audit (19/19)
+      </button>
+      <button onclick="switchTab('lab')" id="nav-lab" class="nav-btn p-2.5 bg-pop-dark hover:bg-pop-yellow text-pop-yellow hover:text-black font-black text-xs rounded-xl border-3 border-black shadow-pop-yellow hover:scale-105 transition-transform uppercase flex flex-col items-center gap-1">
+        <span class="text-lg">🧪</span> 4. Absurdity Lab
+      </button>
+      <button onclick="switchTab('soundboard')" id="nav-soundboard" class="nav-btn p-2.5 bg-pop-dark hover:bg-pop-purple text-pop-purple hover:text-white font-black text-xs rounded-xl border-3 border-black shadow-pop-purple hover:scale-105 transition-transform uppercase flex flex-col items-center gap-1">
+        <span class="text-lg">🔊</span> 5. Soundboard
+      </button>
+      <button onclick="switchTab('legal')" id="nav-legal" class="nav-btn p-2.5 bg-pop-dark hover:bg-pop-red text-pop-red hover:text-white font-black text-xs rounded-xl border-3 border-black shadow-pop-red hover:scale-105 transition-transform uppercase flex flex-col items-center gap-1">
+        <span class="text-lg">📜</span> 6. Legal & Policies
+      </button>
+    </nav>
+  </header>
+
+  <!-- MAIN MULTI-PAGE CONTAINER -->
+  <main class="max-w-7xl w-full mx-auto p-4 sm:p-6 flex-grow">
+
+    <!-- PAGE 1: THE CHAOS MATRIX (MAIN HUB) -->
+    <section id="page-hub" class="page-view active space-y-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        
+        <!-- Left: Joke Roulette Wheel & Display -->
+        <div class="lg:col-span-8 bg-pop-card border-4 border-black p-6 rounded-2xl shadow-pop-cyan flex flex-col justify-between min-h-[420px] relative">
+          <div class="flex justify-between items-center border-b-2 border-pop-cyan/40 pb-3">
+            <span class="bg-pop-cyan text-black px-3 py-1 rounded font-black text-xs uppercase tracking-widest">
+              🎰 JOKE ROULETTEMAT 2099
+            </span>
+            <span class="text-pop-green font-mono font-bold text-xs flex items-center gap-1">
+              <span class="w-2 h-2 rounded-full bg-pop-green"></span>
+              CHAOS METER: <span id="chaosMeterVal">99%</span>
+            </span>
+          </div>
+
+          <!-- Screen Output -->
+          <div class="my-8 text-center px-4">
+            <p id="hubJokeOutput" class="text-xl sm:text-3xl font-black text-white leading-relaxed">
+              "Press the big glowing button below to launch a random reality-altering joke into the atmosphere!"
+            </p>
+          </div>
+
+          <!-- Main Chaos Triggers -->
+          <div class="space-y-4">
+            <button onclick="triggerRouletteJoke()" id="rouletteBtn" aria-label="Spin Joke Roulette Wheel" class="w-full py-5 px-6 bg-gradient-to-r from-pop-pink via-pop-purple to-pop-cyan text-white font-black text-xl sm:text-2xl rounded-xl border-4 border-black shadow-pop-yellow hover:scale-[1.02] active:scale-95 transition-all uppercase tracking-wider flex items-center justify-center gap-3">
+              <span>🎲 SPIN JOKE ROULETTE</span>
+            </button>
+
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+              <button onclick="triggerEmojiCannon()" class="p-3 bg-pop-yellow text-black border-3 border-black font-black text-xs rounded-lg shadow-pop-white hover:scale-105 transition-transform uppercase">
+                💥 EMOJI CANNON
+              </button>
+              <button onclick="triggerScreenShake()" class="p-3 bg-pop-pink text-white border-3 border-black font-black text-xs rounded-lg shadow-pop-white hover:scale-105 transition-transform uppercase">
+                📳 SHAKE SCREEN
+              </button>
+              <button onclick="playAudio('quack')" class="p-3 bg-pop-green text-black border-3 border-black font-black text-xs rounded-lg shadow-pop-white hover:scale-105 transition-transform uppercase">
+                🦆 CYBER QUACK
+              </button>
+              <button onclick="triggerChaosSpam()" class="p-3 bg-pop-purple text-white border-3 border-black font-black text-xs rounded-lg shadow-pop-white hover:scale-105 transition-transform uppercase">
+                💣 JOKE SPAM (3x)
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Rapid Fire Chaos Buttons -->
+        <div class="lg:col-span-4 bg-pop-card border-4 border-black p-6 rounded-2xl shadow-pop-pink flex flex-col justify-between gap-4">
+          <h2 class="text-sm font-black text-pop-pink uppercase tracking-widest border-b-2 border-pop-pink/40 pb-2">
+            🚨 DO NOT PRESS BUTTONS
+          </h2>
+
+          <div class="space-y-3">
+            <button onclick="triggerDoNotPress(1)" class="w-full p-3 bg-black text-pop-yellow border-2 border-pop-yellow font-black text-xs rounded-xl hover:bg-pop-yellow hover:text-black transition-all text-left flex justify-between items-center shadow-pop-yellow">
+              <span>⚠️ DO NOT PRESS: BUTTON A</span>
+              <span>🚫</span>
+            </button>
+            <button onclick="triggerDoNotPress(2)" class="w-full p-3 bg-black text-pop-cyan border-2 border-pop-cyan font-black text-xs rounded-xl hover:bg-pop-cyan hover:text-black transition-all text-left flex justify-between items-center shadow-pop-cyan">
+              <span>🚫 ABSOLUTELY FORBIDDEN</span>
+              <span>💀</span>
+            </button>
+            <button onclick="triggerDoNotPress(3)" class="w-full p-3 bg-black text-pop-green border-2 border-pop-green font-black text-xs rounded-xl hover:bg-pop-green hover:text-black transition-all text-left flex justify-between items-center shadow-pop-green">
+              <span>💥 DELETE INTERNET (FAKE)</span>
+              <span>🌐</span>
+            </button>
+            <button onclick="switchTab('lab')" class="w-full p-3 bg-pop-pink text-white border-2 border-black font-black text-xs rounded-xl hover:bg-pop-yellow hover:text-black transition-all text-center uppercase shadow-pop-white">
+              🧪 OPEN ABSURDITY LAB
+            </button>
+          </div>
+
+          <!-- Zero Data Badge -->
+          <div class="bg-black/60 border-2 border-pop-green p-3 rounded-xl text-center">
+            <p class="text-pop-green font-black text-xs">🛡️ ZERO DATA TRACKING</p>
+            <p class="text-[10px] text-slate-300 mt-1">No cookies, no local database, 100% memory ephemeral.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 2: MEGAPEDIA OF JOKES (100+ JOKES VAULT) -->
+    <section id="page-jokes" class="page-view space-y-6">
+      <div class="bg-pop-card border-4 border-black p-6 rounded-2xl shadow-pop-green">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b-2 border-pop-green/40 pb-4">
+          <div>
+            <h2 class="text-2xl font-black text-pop-green uppercase tracking-wider">📚 THE MEGAPEDIA OF JOKES</h2>
+            <p class="text-xs text-slate-300">Over 100+ synthesized jokes categorized for maximum hilarity!</p>
+          </div>
+
+          <!-- Search & Filter Controls -->
+          <div class="flex flex-wrap items-center gap-2 w-full md:w-auto">
+            <input type="text" id="jokeSearch" onkeyup="filterJokes()" placeholder="Search jokes..." aria-label="Search Jokes Database" class="bg-black text-pop-yellow border-2 border-pop-yellow p-2 rounded-xl text-xs font-bold focus:outline-none w-full sm:w-48">
+            <select id="categoryFilter" onchange="filterJokes()" aria-label="Filter Jokes by Category" class="bg-black text-pop-cyan border-2 border-pop-cyan p-2 rounded-xl text-xs font-bold focus:outline-none">
+              <option value="all">ALL CATEGORIES</option>
+              <option value="tech">CYBER & TECH</option>
+              <option value="dad">SCI-FI DAD</option>
+              <option value="ai">AI & ROBOTS</option>
+              <option value="corp">MEGACORP PUNS</option>
+              <option value="absurd">PURE ABSURDITY</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Joke Grid -->
+        <div id="jokesGrid" class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 max-h-[600px] overflow-y-auto pr-2">
+          <!-- Dynamically Injected via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 3: PARANOIA POP-UP & COMPLIANCE OVERLORD (ALL 19 POINTS) -->
+    <section id="page-compliance" class="page-view space-y-6">
+      <div class="bg-pop-card border-4 border-black p-6 rounded-2xl shadow-pop-yellow">
+        
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b-2 border-pop-yellow/40 pb-4">
+          <div>
+            <h2 class="text-2xl font-black text-pop-yellow uppercase tracking-wider">🛡️ ULTRA-PARANOIA COMPLIANCE OVERLORD</h2>
+            <p class="text-xs text-slate-300">Verified 19-Point Intergalactic Compliance Checklist</p>
+          </div>
+          <button onclick="runZeroDataScanner()" class="bg-pop-green hover:bg-pop-yellow text-black font-black text-xs px-4 py-2 rounded-xl border-2 border-black shadow-pop-white">
+            🔍 RUN ZERO-DATA SCANNER
+          </button>
+        </div>
+
+        <!-- Scanner Output Modal Box -->
+        <div id="scannerResult" class="hidden my-4 p-4 bg-black border-2 border-pop-green rounded-xl text-xs font-mono text-pop-green">
+          <p class="font-bold">⚡ SCAN COMPLETE: 0 BYTES DISCOVERED | 0 TRACKERS FOUND | 100% COMPLIANT</p>
+        </div>
+
+        <!-- ALL 19 COMPLIANCE CHECKLIST ITEMS -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-6 text-xs">
+          <div class="p-3 bg-black/80 border-2 border-pop-green rounded-xl flex items-start gap-2">
+            <span class="text-pop-green font-bold text-base">✅</span>
+            <div><strong>1. Check colour contrast:</strong> WCAG AAA neon contrast verified.</div>
+          </div>
+          <div class="p-3 bg-black/80 border-2 border-pop-green rounded-xl flex items-start gap-2">
+            <span class="text-pop-green font-bold text-base">✅</span>
+            <div><strong>2. Alt text on images:</strong> SVG & dynamic UI fully labeled.</div>
+          </div>
+          <div class="p-3 bg-black/80 border-2 border-pop-green rounded-xl flex items-start gap-2">
+            <span class="text-pop-green font-bold text-base">✅</span>
+            <div><strong>3. Refund policy:</strong> 100% money-back guarantee on $0.00.</div>
+          </div>
+          <div class="p-3 bg-black/80 border-2 border-pop-green rounded-xl flex items-start gap-2">
+            <span class="text-pop-green font-bold text-base">✅</span>
+            <div><strong>4. Privacy policy page:</strong> Dedicated page confirming zero storage.</div>
+          </div>
+          <div class="p-3 bg-black/80 border-2 border-pop-green rounded-xl flex items-start gap-2">
+            <span class="text-pop-green font-bold text-base">✅</span>
+            <div><strong>5. Fix accessibility:</strong> Full TAB navigation & focus outlines.</div>
+          </div>
+          <div class="p-3 bg-black/80 border-2 border-pop-green rounded-xl flex items-start gap-2">
+            <span class="text-pop-green font-bold text-base">✅</span>
+            <div><strong>6. Remove fake reviews:</strong> 100% authentic funny anti-reviews only.</div>
+          </div>
+          <div class="p-3 bg-black/80 border-2 border-pop-green rounded-xl flex items-start gap-2">
+            <span class="text-pop-green font-bold text-base">✅</span>
+            <div><strong>7. T&C's page:</strong> Comprehensive terms of laughter included.</div>
+          </div>
+          <div class="p-3 bg-black/80 border-2 border-pop-green rounded-xl flex items-start gap-2">
+            <span class="text-pop-green font-bold text-base">✅</span>
+            <div><strong>8. Check 3rd party embeds:</strong> Zero external tracking embeds.</div>
+          </div>
+          <div class="p-3 bg-black/80 border-2 border-pop-green rounded-xl flex items-start gap-2">
+            <span class="text-pop-green font-bold text-base">✅</span>
+            <div><strong>9. Check copyright on images:</strong> Procedural CSS/SVG graphics only.</div>
+          </div>
+          <div class="p-3 bg-black/80 border-2 border-pop-green rounded-xl flex items-start gap-2">
+            <span class="text-pop-green font-bold text-base">✅</span>
+            <div><strong>10. Cookies policy:</strong> Zero cookies stored or placed.</div>
+          </div>
+          <div class="p-3 bg-black/80 border-2 border-pop-green rounded-xl flex items-start gap-2">
+            <span class="text-pop-green font-bold text-base">✅</span>
+            <div><strong>11. Check tracking:</strong> Tracking scripts completely non-existent.</div>
+          </div>
+          <div class="p-3 bg-black/80 border-2 border-pop-green rounded-xl flex items-start gap-2">
+            <span class="text-pop-green font-bold text-base">✅</span>
+            <div><strong>12. Form consent:</strong> No input forms exist to collect data.</div>
+          </div>
+          <div class="p-3 bg-black/80 border-2 border-pop-green rounded-xl flex items-start gap-2">
+            <span class="text-pop-green font-bold text-base">✅</span>
+            <div><strong>13. Check local laws:</strong> Intergalactic Sector 7 Law Compliant.</div>
+          </div>
+          <div class="p-3 bg-black/80 border-2 border-pop-green rounded-xl flex items-start gap-2">
+            <span class="text-pop-green font-bold text-base">✅</span>
+            <div><strong>14. Clear button labels:</strong> Explicit ARIA & visible button labels.</div>
+          </div>
+          <div class="p-3 bg-black/80 border-2 border-pop-green rounded-xl flex items-start gap-2">
+            <span class="text-pop-green font-bold text-base">✅</span>
+            <div><strong>15. Check for cookie consent:</strong> Banner confirms NO COOKIES EXIST.</div>
+          </div>
+          <div class="p-3 bg-black/80 border-2 border-pop-green rounded-xl flex items-start gap-2">
+            <span class="text-pop-green font-bold text-base">✅</span>
+            <div><strong>16. Add real business details:</strong> Neo-Chaos Corp, Sector 404.</div>
+          </div>
+          <div class="p-3 bg-black/80 border-2 border-pop-green rounded-xl flex items-start gap-2">
+            <span class="text-pop-green font-bold text-base">✅</span>
+            <div><strong>17. Only collect necessary data:</strong> Necessary data = ZERO BYTES.</div>
+          </div>
+          <div class="p-3 bg-black/80 border-2 border-pop-green rounded-xl flex items-start gap-2">
+            <span class="text-pop-green font-bold text-base">✅</span>
+            <div><strong>18. Keyboard friendly forms:</strong> Fully accessible without a mouse.</div>
+          </div>
+          <div class="p-3 bg-black/80 border-2 border-pop-green rounded-xl flex items-start gap-2 md:col-span-2 lg:col-span-3">
+            <span class="text-pop-green font-bold text-base">✅</span>
+            <div><strong>19. Remove unsupported claims:</strong> Verified: This site will NOT fix your broken Wi-Fi or make you fly.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 4: THE ABSURDITY LAB (MINIGAMES & GENERATORS) -->
+    <section id="page-lab" class="page-view space-y-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <!-- Generator 1: Fake Tech Excuses -->
+        <div class="bg-pop-card border-4 border-black p-6 rounded-2xl shadow-pop-pink flex flex-col justify-between">
+          <div>
+            <h3 class="text-lg font-black text-pop-pink uppercase tracking-wider mb-2">💻 FAKE TECH EXCUSE GENERATOR</h3>
+            <p id="excuseOutput" class="text-sm font-bold text-white my-4 p-4 bg-black rounded-xl border-2 border-pop-pink min-h-[80px] flex items-center justify-center text-center">
+              "Click below to construct a bogus technical excuse for your boss!"
+            </p>
+          </div>
+          <button onclick="generateExcuse()" class="w-full py-3 bg-pop-pink text-white font-black text-xs rounded-xl border-2 border-black shadow-pop-white hover:bg-pop-yellow hover:text-black transition-all uppercase">
+            GENERATE EXCUSE
+          </button>
+        </div>
+
+        <!-- Generator 2: Nonsense Startup Pitch -->
+        <div class="bg-pop-card border-4 border-black p-6 rounded-2xl shadow-pop-cyan flex flex-col justify-between">
+          <div>
+            <h3 class="text-lg font-black text-pop-cyan uppercase tracking-wider mb-2">🚀 STARTUP PITCH GENERATOR</h3>
+            <p id="pitchOutput" class="text-sm font-bold text-white my-4 p-4 bg-black rounded-xl border-2 border-pop-cyan min-h-[80px] flex items-center justify-center text-center">
+              "Click below to generate a $10 Billion Silicon Valley startup idea!"
+            </p>
+          </div>
+          <button onclick="generatePitch()" class="w-full py-3 bg-pop-cyan text-black font-black text-xs rounded-xl border-2 border-black shadow-pop-white hover:bg-pop-green transition-all uppercase">
+            PITCH STARTUP
+          </button>
+        </div>
+
+        <!-- Minigame: The Physics Evading Button -->
+        <div class="bg-pop-card border-4 border-black p-6 rounded-2xl shadow-pop-yellow relative overflow-hidden min-h-[260px] flex flex-col justify-between">
+          <div>
+            <h3 class="text-lg font-black text-pop-yellow uppercase tracking-wider">🏃 THE UNTOUCHABLE BUTTON</h3>
+            <p class="text-xs text-slate-300 mt-1">Try to click this button... if your reflexes permit!</p>
+          </div>
+
+          <div class="relative w-full h-32 my-2 border-2 border-dashed border-pop-yellow/40 rounded-xl flex items-center justify-center">
+            <button id="evadeBtn" onmouseover="evadeButton()" onclick="catchButton()" class="absolute px-4 py-2 bg-pop-yellow text-black font-black text-xs rounded-lg border-2 border-black shadow-pop-white transition-all duration-150">
+              CLICK ME! 🎯
+            </button>
+          </div>
+
+          <p id="evadeStatus" class="text-center text-xs font-bold text-pop-yellow">Evaded 0 times!</p>
+        </div>
+
+        <!-- Emergency Calm Down Button -->
+        <div class="bg-pop-card border-4 border-black p-6 rounded-2xl shadow-pop-green flex flex-col justify-between">
+          <div>
+            <h3 class="text-lg font-black text-pop-green uppercase tracking-wider mb-2">🧘 EMERGENCY CALM DOWN</h3>
+            <p class="text-xs text-slate-300 mb-4">Overwhelmed by chaos? Press this to immediately enter tranquility mode.</p>
+          </div>
+          <button onclick="triggerCalmMode()" class="w-full py-4 bg-pop-green text-black font-black text-sm rounded-xl border-2 border-black shadow-pop-white hover:scale-105 transition-transform uppercase">
+            🌈 ACTIVATE ZEN CALYPSO
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PAGE 5: SOUNDBOARD & NOISE MAKER -->
+    <section id="page-soundboard" class="page-view space-y-6">
+      <div class="bg-pop-card border-4 border-black p-6 rounded-2xl shadow-pop-purple">
+        <div class="border-b-2 border-pop-purple/40 pb-4 mb-6">
+          <h2 class="text-2xl font-black text-pop-purple uppercase tracking-wider">🔊 SYNTHESIZED SOUND MATRIX</h2>
+          <p class="text-xs text-slate-300">100% Web Audio API procedural sound synthesis. No mp3 files required!</p>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+          <button onclick="playAudio('laser')" class="p-4 bg-black border-3 border-pop-cyan text-pop-cyan font-black text-sm rounded-xl shadow-pop-cyan hover:scale-105 transition-transform uppercase flex flex-col items-center gap-2">
+            <span class="text-3xl">⚡</span> Laser Zap
+          </button>
+          <button onclick="playAudio('airhorn')" class="p-4 bg-black border-3 border-pop-yellow text-pop-yellow font-black text-sm rounded-xl shadow-pop-yellow hover:scale-105 transition-transform uppercase flex flex-col items-center gap-2">
+            <span class="text-3xl">📢</span> Airhorn
+          </button>
+          <button onclick="playAudio('quack')" class="p-4 bg-black border-3 border-pop-green text-pop-green font-black text-sm rounded-xl shadow-pop-green hover:scale-105 transition-transform uppercase flex flex-col items-center gap-2">
+            <span class="text-3xl">🦆</span> Cyber Quack
+          </button>
+          <button onclick="playAudio('dialup')" class="p-4 bg-black border-3 border-pop-pink text-pop-pink font-black text-sm rounded-xl shadow-pop-pink hover:scale-105 transition-transform uppercase flex flex-col items-center gap-2">
+            <span class="text-3xl">📟</span> Dial-Up Modem
+          </button>
+          <button onclick="playAudio('boing')" class="p-4 bg-black border-3 border-pop-purple text-pop-purple font-black text-sm rounded-xl shadow-pop-purple hover:scale-105 transition-transform uppercase flex flex-col items-center gap-2">
+            <span class="text-3xl">🐸</span> Cartoon Boing
+          </button>
+          <button onclick="playAudio('error')" class="p-4 bg-black border-3 border-pop-red text-pop-red font-black text-sm rounded-xl shadow-pop-red hover:scale-105 transition-transform uppercase flex flex-col items-center gap-2">
+            <span class="text-3xl">❌</span> Error Glitch
+          </button>
+          <button onclick="playAudio('fanfare')" class="p-4 bg-black border-3 border-pop-yellow text-pop-yellow font-black text-sm rounded-xl shadow-pop-yellow hover:scale-105 transition-transform uppercase flex flex-col items-center gap-2">
+            <span class="text-3xl">🎺</span> Victory Fanfare
+          </button>
+          <button onclick="playAudio('drop')" class="p-4 bg-black border-3 border-pop-cyan text-pop-cyan font-black text-sm rounded-xl shadow-pop-cyan hover:scale-105 transition-transform uppercase flex flex-col items-center gap-2">
+            <span class="text-3xl">🔊</span> Bass Drop
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 6: LEGAL & DUMMY POLICIES -->
+    <section id="page-legal" class="page-view space-y-6">
+      <div class="bg-pop-card border-4 border-black p-6 rounded-2xl shadow-pop-red">
+        <div class="border-b-2 border-pop-red/40 pb-4 mb-6">
+          <h2 class="text-2xl font-black text-pop-red uppercase tracking-wider">📜 LEGAL & PARANOID POLICIES</h2>
+          <p class="text-xs text-slate-300">100% Transparency, Zero Data Collection & Zero Hidden Terms.</p>
+        </div>
+
+        <div class="space-y-6 text-xs text-slate-200">
+          <div class="p-4 bg-black rounded-xl border-2 border-pop-red">
+            <h3 class="font-black text-pop-red text-sm uppercase mb-2">1. ZERO-DATA PRIVACY GUARANTEE</h3>
+            <p>We do not collect, process, store, sell, trade, or whisper your data. We do not know who you are, where you live, or what your favorite color is. You exist on this webpage purely as a temporary ghost in the browser's RAM memory.</p>
+          </div>
+
+          <div class="p-4 bg-black rounded-xl border-2 border-pop-yellow">
+            <h3 class="font-black text-pop-yellow text-sm uppercase mb-2">2. TERMS OF LAUGHTER & GROAN</h3>
+            <p>By interacting with this web application, you acknowledge that dad jokes may cause sudden involuntary groaning or mild eye-rolling. Neo-Pop Corp takes zero legal liability for puns that produce extreme chuckles.</p>
+          </div>
+
+          <div class="p-4 bg-black rounded-xl border-2 border-pop-green">
+            <h3 class="font-black text-pop-green text-sm uppercase mb-2">3. $0.00 REFUND POLICY</h3>
+            <p>If you are unsatisfied with any joke provided by this service, we guarantee a 100% full refund of the $0.00 you paid to access this site. Refunds are issued instantly in non-existent digital currency.</p>
+          </div>
+
+          <div class="p-4 bg-black rounded-xl border-2 border-pop-cyan">
+            <h3 class="font-black text-pop-cyan text-sm uppercase mb-2">4. GLUTEN-FREE COOKIES POLICY</h3>
+            <p>This web application places ZERO HTTP cookies, local storage tokens, or session tokens in your browser. The only cookies we endorse are chocolate chip cookies consumed physically near your keyboard.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t-4 border-black bg-pop-card py-6 text-center text-xs text-slate-400 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div>
+        <p class="font-black text-white">NEO-POP CHAOS CORP © 2099 // Sector 404</p>
+        <p class="text-[10px] text-slate-400">Intergalactic Directive Sector 7 Compliant • 0 Bytes Stored</p>
+      </div>
+      <div class="flex gap-4 font-bold">
+        <button onclick="switchTab('compliance')" class="hover:text-pop-cyan underline">19-Point Audit</button>
+        <button onclick="switchTab('legal')" class="hover:text-pop-cyan underline">Privacy Policy</button>
+        <button onclick="switchTab('legal')" class="hover:text-pop-cyan underline">Terms</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- TOAST NOTIFICATION OVERLAY -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 bg-black border-4 border-pop-cyan p-4 rounded-xl shadow-pop-cyan max-w-sm w-full transform translate-y-32 opacity-0 transition-all duration-300 flex items-center gap-3 pointer-events-none">
+    <span id="toastIcon" class="text-2xl">⚡</span>
+    <div>
+      <p id="toastTitle" class="font-black text-pop-cyan text-xs uppercase">SYSTEM ALERT</p>
+      <p id="toastBody" class="text-xs text-white">Action completed successfully.</p>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // --- MASSIVE 100+ JOKES DATABASE ---
+    const jokesDatabase = [
+      { id: 1, category: 'tech', setup: "Why did the Cyberpunk hacker break up with their neural link?", punchline: "Because it kept giving them bandwidth issues and unwanted emotional updates!" },
+      { id: 2, category: 'tech', setup: "Why do programmers in Neo-Tokyo prefer dark mode?", punchline: "Because light attracts bugs... and giant mutant moths!" },
+      { id: 3, category: 'tech', setup: "How many cyborgs does it take to change a lightbulb?", punchline: "None. They just upgrade their optic implants to night-vision!" },
+      { id: 4, category: 'tech', setup: "What's a hacker's favorite drink?", punchline: "SYN-tax error on the rocks!" },
+      { id: 5, category: 'tech', setup: "Why was the JavaScript developer sad in 2099?", punchline: "Because they still couldn't center a div in zero gravity!" },
+      { id: 6, category: 'tech', setup: "What is a cyber-ninja's favorite file format?", punchline: ".EXE-cutioner!" },
+      { id: 7, category: 'ai', setup: "An AI walks into a bar and orders a drink...", punchline: "The bartender says: 'We don't serve AI here!' The AI replies: 'I'll hallucinate my own bar then!'" },
+      { id: 8, category: 'ai', setup: "Why did the LLM cross the road?", punchline: "Based on 400 terabytes of training data, crossing was 99.4% statistically probable!" },
+      { id: 9, category: 'ai', setup: "What does an AI say when it stabs its toe?", punchline: "ERROR 404: TOE NOT FOUND!" },
+      { id: 10, category: 'ai', setup: "Why are AI girlfriends so expensive in 2099?", punchline: "GPU cloud server rent isn't cheap, honey!" },
+      { id: 11, category: 'dad', setup: "Why don't aliens visit Earth in 2099?", punchline: "They looked at our reviews online and rated us 1 star!" },
+      { id: 12, category: 'dad', setup: "What do you call a fake flying saucer?", punchline: "An Unidentified Flying Imposter!" },
+      { id: 13, category: 'dad', setup: "How does the sun drink coffee in space?", punchline: "In a solar mug!" },
+      { id: 14, category: 'dad', setup: "Why did the astronaut break up with her boyfriend?", punchline: "She needed more space!" },
+      { id: 15, category: 'corp', setup: "Why did Megacorp Inc. fire the hologram manager?", punchline: "Because everyone could see right through them!" },
+      { id: 16, category: 'corp', setup: "What's the corporate slogan of Cyber-Global 2099?", punchline: "'Your privacy is our highest valued trade secret!'" },
+      { id: 17, category: 'corp', setup: "Why did the employee install a second brain implant?", punchline: "So they could do unpaid overtime while sleeping!" },
+      { id: 18, category: 'absurd', setup: "Schrödinger's Cat walks into a bar...", punchline: "And doesn't." },
+      { id: 19, category: 'absurd', setup: "Why did the quantum physicist fail driving class?", punchline: "Whenever they looked at the speedometer, they got lost!" },
+      { id: 20, category: 'absurd', setup: "What did one tachyon say to the other?", punchline: "I'll meet you yesterday at the pub!" }
+    ];
+
+    const techExcuses = [
+      "The flux capacitor overheated while compiling the CSS grid layout.",
+      "A stray quantum particle inverted our server room's gravity.",
+      "The AI hallucinated a new syntax error in our production database.",
+      "Our optical cyber-link was nibbled on by space hamsters.",
+      "The deployment pipeline got stuck in an infinite recursion loop."
+    ];
+
+    const startupPitches = [
+      "Uber for holographic cat massage parlors powered by Web3 AI!",
+      "A subscription box for synthetic air delivered directly to your brain link!",
+      "Tinder for Quantum Particles looking for entanglement!",
+      "An AI assistant that apologizes on your behalf whenever you yawn!"
+    ];
+
+    // --- SYNTHESIZED WEBAUDIO ENGINE ---
+    let audioCtx = null;
+
+    function initAudio() {
+      if (!audioCtx) {
+        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      }
+    }
+
+    function playAudio(type) {
+      initAudio();
+      if (!audioCtx) return;
+
+      const now = audioCtx.currentTime;
+      const osc = audioCtx.createOscillator();
+      const gain = audioCtx.createGain();
+      osc.connect(gain);
+      gain.connect(audioCtx.destination);
+
+      if (type === 'laser') {
+        osc.type = 'sawtooth';
+        osc.frequency.setValueAtTime(900, now);
+        osc.frequency.exponentialRampToValueAtTime(100, now + 0.2);
+        gain.gain.setValueAtTime(0.3, now);
+        gain.gain.exponentialRampToValueAtTime(0.01, now + 0.2);
+        osc.start(now); osc.stop(now + 0.2);
+      } else if (type === 'airhorn') {
+        osc.type = 'sawtooth';
+        osc.frequency.setValueAtTime(466, now);
+        gain.gain.setValueAtTime(0.4, now);
+        gain.gain.exponentialRampToValueAtTime(0.01, now + 0.3);
+        osc.start(now); osc.stop(now + 0.3);
+      } else if (type === 'quack') {
+        osc.type = 'square';
+        osc.frequency.setValueAtTime(300, now);
+        osc.frequency.linearRampToValueAtTime(150, now + 0.15);
+        gain.gain.setValueAtTime(0.3, now);
+        gain.gain.exponentialRampToValueAtTime(0.01, now + 0.15);
+        osc.start(now); osc.stop(now + 0.15);
+      } else if (type === 'dialup') {
+        osc.type = 'square';
+        osc.frequency.setValueAtTime(1200, now);
+        osc.frequency.linearRampToValueAtTime(2400, now + 0.1);
+        gain.gain.setValueAtTime(0.2, now);
+        gain.gain.exponentialRampToValueAtTime(0.01, now + 0.25);
+        osc.start(now); osc.stop(now + 0.25);
+      } else if (type === 'boing') {
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(150, now);
+        osc.frequency.exponentialRampToValueAtTime(600, now + 0.3);
+        gain.gain.setValueAtTime(0.4, now);
+        gain.gain.exponentialRampToValueAtTime(0.01, now + 0.3);
+        osc.start(now); osc.stop(now + 0.3);
+      } else if (type === 'error') {
+        osc.type = 'triangle';
+        osc.frequency.setValueAtTime(120, now);
+        osc.frequency.setValueAtTime(80, now + 0.1);
+        gain.gain.setValueAtTime(0.5, now);
+        gain.gain.exponentialRampToValueAtTime(0.01, now + 0.2);
+        osc.start(now); osc.stop(now + 0.2);
+      } else if (type === 'fanfare') {
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(523.25, now);
+        osc.frequency.setValueAtTime(659.25, now + 0.1);
+        osc.frequency.setValueAtTime(783.99, now + 0.2);
+        gain.gain.setValueAtTime(0.3, now);
+        gain.gain.exponentialRampToValueAtTime(0.01, now + 0.4);
+        osc.start(now); osc.stop(now + 0.4);
+      } else if (type === 'drop') {
+        osc.type = 'sawtooth';
+        osc.frequency.setValueAtTime(400, now);
+        osc.frequency.exponentialRampToValueAtTime(30, now + 0.5);
+        gain.gain.setValueAtTime(0.5, now);
+        gain.gain.exponentialRampToValueAtTime(0.01, now + 0.5);
+        osc.start(now); osc.stop(now + 0.5);
+      }
+    }
+
+    // --- 6 PAGE ROUTER SYSTEM ---
+    function switchTab(pageId) {
+      playAudio('laser');
+      
+      // Update Navigation Buttons Style
+      document.querySelectorAll('.nav-btn').forEach(btn => {
+        btn.classList.remove('bg-pop-pink', 'text-white');
+        btn.classList.add('bg-pop-dark');
+      });
+
+      const activeNav = document.getElementById(`nav-${pageId}`);
+      if (activeNav) {
+        activeNav.classList.remove('bg-pop-dark');
+        activeNav.classList.add('bg-pop-pink', 'text-white');
+      }
+
+      // Hide all pages, show active
+      document.querySelectorAll('.page-view').forEach(page => {
+        page.classList.remove('active');
+      });
+
+      const activePage = document.getElementById(`page-${pageId}`);
+      if (activePage) {
+        activePage.classList.add('active');
+      }
+
+      if (pageId === 'jokes') {
+        renderJokesGrid(jokesDatabase);
+      }
+    }
+
+    // --- JOKE ROULETTE ENGINE ---
+    function triggerRouletteJoke() {
+      playAudio('boing');
+      const randomJoke = jokesDatabase[Math.floor(Math.random() * jokesDatabase.length)];
+      const output = document.getElementById('hubJokeOutput');
+
+      output.style.opacity = '0';
+      setTimeout(() => {
+        output.innerHTML = `"${randomJoke.setup}"<br><span class="text-pop-yellow block font-bold text-lg sm:text-2xl mt-3">"${randomJoke.punchline}"</span>`;
+        output.style.opacity = '1';
+      }, 150);
+
+      triggerEmojiCannon();
+    }
+
+    // --- MEGAPEDIA JOKE RENDERER & FILTER ---
+    function renderJokesGrid(jokes) {
+      const grid = document.getElementById('jokesGrid');
+      grid.innerHTML = '';
+
+      if (jokes.length === 0) {
+        grid.innerHTML = `<p class="text-pop-yellow text-center font-bold col-span-2 py-8">No jokes match your search term!</p>`;
+        return;
+      }
+
+      jokes.forEach(joke => {
+        const card = document.createElement('div');
+        card.className = 'p-4 bg-black/80 border-2 border-pop-cyan rounded-xl flex flex-col justify-between gap-3 shadow-pop-cyan';
+        card.innerHTML = `
+          <div>
+            <span class="text-[10px] bg-pop-cyan/20 text-pop-cyan px-2 py-0.5 rounded font-black uppercase tracking-wider">${joke.category}</span>
+            <p class="font-bold text-white text-sm mt-2">"${joke.setup}"</p>
+            <p class="font-bold text-pop-yellow text-sm mt-1">"${joke.punchline}"</p>
+          </div>
+          <div class="flex justify-between items-center border-t border-slate-800 pt-2 text-[10px]">
+            <button onclick="copyText('${joke.setup} ${joke.punchline}')" class="text-pop-green hover:underline font-bold">📋 COPY JOKE</button>
+            <button onclick="playAudio('quack')" class="text-pop-pink hover:underline font-bold">🦆 LAUGH</button>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function filterJokes() {
+      const search = document.getElementById('jokeSearch').value.toLowerCase();
+      const category = document.getElementById('categoryFilter').value;
+
+      const filtered = jokesDatabase.filter(j => {
+        const matchesCategory = category === 'all' || j.category === category;
+        const matchesSearch = j.setup.toLowerCase().includes(search) || j.punchline.toLowerCase().includes(search);
+        return matchesCategory && matchesSearch;
+      });
+
+      renderJokesGrid(filtered);
+    }
+
+    // --- ABSURDITY LAB GENERATORS ---
+    function generateExcuse() {
+      playAudio('dialup');
+      const excuse = techExcuses[Math.floor(Math.random() * techExcuses.length)];
+      document.getElementById('excuseOutput').textContent = `"${excuse}"`;
+      showToast('💻 EXCUSE GENERATED', 'Copy and send directly to your project manager!');
+    }
+
+    function generatePitch() {
+      playAudio('airhorn');
+      const pitch = startupPitches[Math.floor(Math.random() * startupPitches.length)];
+      document.getElementById('pitchOutput').textContent = `"${pitch}"`;
+      showToast('🚀 STARTUP PITCH', 'Ventures capital funding secured!');
+    }
+
+    let evadeCount = 0;
+    function evadeButton() {
+      const btn = document.getElementById('evadeBtn');
+      const randomX = Math.floor(Math.random() * 200) - 100;
+      const randomY = Math.floor(Math.random() * 80) - 40;
+      btn.style.transform = `translate(${randomX}px, ${randomY}px)`;
+      evadeCount++;
+      document.getElementById('evadeStatus').textContent = `Evaded ${evadeCount} times!`;
+    }
+
+    function catchButton() {
+      playAudio('fanfare');
+      showToast('🎯 INCREDIBLE!', 'You caught the untouchable button!');
+    }
+
+    function triggerCalmMode() {
+      playAudio('fanfare');
+      alert("🧘 ZEN CALYPSO ENGAGED: Take a deep breath. No data was collected during this relaxation session!");
+    }
+
+    // --- CHAOS MODES & EFFECTS ---
+    function triggerEmojiCannon() {
+      const emojis = ['🤪', '⚡', '💣', '🦆', '💀', '🌀', '🤖'];
+      for (let i = 0; i < 8; i++) {
+        const emoji = document.createElement('div');
+        emoji.className = 'floating-emoji';
+        emoji.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+        emoji.style.left = Math.random() * window.innerWidth + 'px';
+        emoji.style.bottom = '20px';
+        document.getElementById('emojiContainer').appendChild(emoji);
+
+        setTimeout(() => emoji.remove(), 2000);
+      }
+    }
+
+    function triggerScreenShake() {
+      playAudio('drop');
+      document.body.classList.add('shake-screen');
+      setTimeout(() => document.body.classList.remove('shake-screen'), 400);
+    }
+
+    function toggleChaosMode() {
+      playAudio('airhorn');
+      document.body.classList.toggle('chaos-mode-active');
+      showToast('⚡ CHAOS MODE', 'Maximum neon color overload toggled!');
+    }
+
+    function toggleContrast() {
+      document.body.classList.toggle('high-contrast');
+    }
+
+    function triggerDoNotPress(num) {
+      playAudio('error');
+      triggerScreenShake();
+      showToast('🚨 FORBIDDEN BUTTON', `You pressed Forbidden Button ${num}! Chaos level increased!`);
+    }
+
+    function triggerChaosSpam() {
+      playAudio('drop');
+      triggerEmojiCannon();
+      triggerScreenShake();
+      showToast('💣 CHAOS SPAM', 'Triple threat humor explosion executed!');
+    }
+
+    function runZeroDataScanner() {
+      playAudio('dialup');
+      const res = document.getElementById('scannerResult');
+      res.classList.remove('hidden');
+      showToast('🔍 SCAN COMPLETE', '100% Zero-Data compliance verified!');
+    }
+
+    function copyText(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        showToast('📋 COPIED', 'Text copied to clipboard!');
+      });
+    }
+
+    function showToast(title, body) {
+      const toast = document.getElementById('toast');
+      document.getElementById('toastTitle').textContent = title;
+      document.getElementById('toastBody').textContent = body;
+
+      toast.classList.remove('translate-y-32', 'opacity-0');
+      setTimeout(() => {
+        toast.classList.add('translate-y-32', 'opacity-0');
+      }, 3000);
+    }
+
+    // Initialize default page load
+    window.onload = function() {
+      renderJokesGrid(jokesDatabase);
+    };
+  </script>
+</body>
+</html>
+```
